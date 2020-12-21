@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cadastro de clientes</title>
+</head>
+
+<body>
+    <section id="ok-modal">
+        <h3>Cliente cadastrado com sucesso!</h3>
+        <i class="fas fa-check-circle"></i>
+    </section>
+    <section>
+        <!-- Cadastro de clientes -->
+        <h2>Formulário de cadastro</h2>
+        <p id="alert"></p>
+        <form id="customer-register">
+            <fieldset>
+                <label for="name">Nome *</label>
+                <input type="text" name="name" id="name" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="cpf-cnpj">CPF/CPNJ *</label>
+                <input type="number" name="cpf-cnpj" id="cpf-cnpj" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="telephone">Telefone *</label>
+                <input type="number" name="telephone" id="telephone" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="cep">CEP *</label>
+                <input type="number" name="cep" id="cep" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="street">Logradouro *</label>
+                <input type="text" name="street" id="street" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="street-number">Número *</label>
+                <input type="text" name="street-number" id="street-number" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="neighborhood">Bairro *</label>
+                <input type="text" name="neighborhood" id="neighborhood" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="city">Cidade *</label>
+                <input type="text" name="city" id="city" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="state">Estado *</label>
+                <input type="text" name="state" id="state" required>
+            </fieldset>
+
+            <button id="register-btn" type="button">Cadastrar</button>
+        </form>
+    </section>
+    
+    <!-- Listagem de clientes -->
+    <section id="clients-view">
+        <h2>Listagem de clientes</h2>
+        <table id="clients-list">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>CPF/CPNJ</th>
+                <th>Telefone</th>
+                <th>CEP</th>
+                <th>Logradouro</th>
+                <th>Número</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+             </tr>
+        </table>
+    </section>
+    <script src="https://kit.fontawesome.com/37a6fc82c8.js" crossorigin="anonymous"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

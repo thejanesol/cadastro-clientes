@@ -12,4 +12,4 @@ Formulário de Cadastro de clientes contendo
 - Cidade
 - Estado
 
-Ações: Listagem e exclusão dos clientes.
+Ações: Listagem, criação e exclusão dos clientes.

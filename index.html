@@ -30,17 +30,17 @@
 
             <fieldset>
                 <label for="cpf-cnpj">CPF/CPNJ *</label>
-                <input type="number" name="cpf-cnpj" id="cpf-cnpj" required>
+                <input type="text" name="cpf-cnpj" id="cpf-cnpj" maxlength="14" OnKeyPress="toFormat('###.###.###-##', this)" required>
             </fieldset>
 
             <fieldset>
                 <label for="telephone">Telefone *</label>
-                <input type="number" name="telephone" id="telephone" required>
+                <input type="text" name="telephone" id="telephone" maxlength="12" OnKeyPress="toFormat('##-####-####', this)" required>
             </fieldset>
 
             <fieldset>
                 <label for="cep">CEP *</label>
-                <input type="number" name="cep" id="cep" required>
+                <input type="text" name="cep" id="cep" maxlength="9" OnKeyPress="toFormat('#####-###', this)" required>
             </fieldset>
 
             <fieldset>

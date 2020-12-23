@@ -4,15 +4,25 @@ if (localStorage.hasOwnProperty("clients") == false) {
     localStorage.setItem("clients", JSON.stringify([{
         name: "Joana",
         email: "joana@gmail.com",
-        cpfCnpj: "00000000000",
-        telephone: '000000000',
-        cep: '42882108',
+        cpfCnpj: "118.615.612-30",
+        telephone: '71-8833-9933',
+        cep: '42293-225',
         street: "Rua das Flores",
         number: 19,
         neighborhood: "Bairro das arvores",
         city: "Cidade das Folhas",
         state: "SP"
     }]))
+}
+
+function toFormat(mask, element) {
+    let i = element.value.length;
+    let output = mask.substring(0, 1);
+    let text = mask.substring(i)
+
+    if (text.substring(0, 1) != output) {
+        element.value += text.substring(0, 1);
+    }
 }
 
 const registerBtn = document.getElementById("register-btn");
